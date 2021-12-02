@@ -28,6 +28,9 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .hero .container {
+        margin-bottom: 170px;
+    }
     .hero__inner {
         background-size: 1284px 854px;
         background-position: left 0 bottom 0;
@@ -48,12 +51,17 @@
 }
 
 @media only screen and (max-width: 530px) {
+    .hero .container {
+        margin-bottom: 120px;
+    }
+
     .hero__inner {
         position: relative;
         padding: 100px 24px;
         z-index: -2;
         background-size: 1284px 854px;
         background-position: left -350px bottom 0;
+
         &::after {
             content: "";
             position: absolute;
