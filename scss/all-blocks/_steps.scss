@@ -1,3 +1,7 @@
+.steps .container{
+    margin-bottom: 200px;
+}
+
 .steps__heading {
     margin-bottom: 95px;
     font-size: 24px;
@@ -75,6 +79,10 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .steps .container{
+        margin-bottom: 150px;
+    }
+
     .steps__heading {
         margin-bottom: 55px;
     }
@@ -104,6 +112,10 @@
 }
 
 @media only screen and(max-width:660px) {
+    .steps .container{
+        margin-bottom: 120px;
+    }
+
     .steps__heading {
         margin-bottom: 88px;
         text-align: center;
@@ -148,6 +160,10 @@
 
     .step__text{
         max-width: 330px;
+        margin: 0 auto;
+    }
+
+    .steps__link{
         margin: 0 auto;
     }
 }
