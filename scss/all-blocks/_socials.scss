@@ -1,0 +1,22 @@
+.socials {
+    display: flex;
+    align-items: center;
+}
+
+.social {
+    & + & {
+        margin-left: 24px;
+    }
+
+    &__image {
+        display: block;
+
+        & path {
+            transition: fill 0.25s ease;
+        }
+
+        &:hover path {
+            fill: $pale-orange;
+        }
+    }
+}

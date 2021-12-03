@@ -3,8 +3,8 @@ document.addEventListener('DOMContentLoaded', function() {
 	// Menu
 
 	function toggleMenu() {
-		$('.nav__burger').toggleClass('nav__burger--active')
-		$('.nav__list').toggleClass('nav__list--active')
+		$('.header .nav__burger').toggleClass('nav__burger--active')
+		$('.header .nav__list').toggleClass('nav__list--active')
         $('.body').toggleClass('body--active')
 	}
 
