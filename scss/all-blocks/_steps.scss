@@ -1,4 +1,4 @@
-.steps .container{
+.steps .container {
     margin-bottom: 200px;
 }
 
@@ -79,7 +79,7 @@
 }
 
 @media only screen and (max-width: 900px) {
-    .steps .container{
+    .steps .container {
         margin-bottom: 150px;
     }
 
@@ -87,7 +87,7 @@
         margin-bottom: 55px;
     }
 
-    .steps__list{
+    .steps__list {
         margin-bottom: 44px;
     }
 
@@ -112,7 +112,7 @@
 }
 
 @media only screen and(max-width:660px) {
-    .steps .container{
+    .steps .container {
         margin-bottom: 120px;
     }
 
@@ -139,31 +139,31 @@
             content: none;
         }
 
-        &:last-child{
+        &:last-child {
             margin-bottom: 0;
         }
     }
 
-    .step__heading{
+    .step__heading {
         margin-bottom: 24px;
         text-align: center;
 
-        &__count{
+        &__count {
             margin-bottom: 24px;
         }
 
-        &__title{
+        &__title {
             max-width: 100%;
             margin: 0 auto;
         }
     }
 
-    .step__text{
+    .step__text {
         max-width: 330px;
         margin: 0 auto;
     }
 
-    .steps__link{
+    .steps__link {
         margin: 0 auto;
     }
 }
