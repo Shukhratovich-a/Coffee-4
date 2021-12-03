@@ -69,3 +69,34 @@ ol {
 main {
     flex-grow: 1;
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    .hero__inner {
+        background-image: url('../images/jpg/2x/hero-picture@2x.jpg');
+    }
+
+    .about-hero__inner {
+        background-image: url("../images/jpg/2x/about-bg-image@2x.jpg");
+    }
+
+    .commitment .container {
+        &::before {
+            background-image: url("../images/jpg/2x/commitment@2x.jpg");
+        }
+    }
+
+    .quality .container {
+        &::after {
+            background-image: url('../images/jpg/2x/quality@2x.jpg');
+        }
+    }
+
+    .create-hero__inner{
+        background-image: url('../images/jpg/2x/create-hero-image@2x.jpg');
+    }
+}
