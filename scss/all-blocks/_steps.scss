@@ -1,0 +1,153 @@
+.steps__heading {
+    margin-bottom: 95px;
+    font-size: 24px;
+    line-height: 32px;
+    color: $grey;
+}
+
+.steps__list {
+    display: grid;
+    max-width: inherit;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 64px;
+}
+
+.step {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    padding-top: 82px;
+    padding-right: 20px;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+        width: 32px;
+        height: 32px;
+        display: block;
+        background-color: $light-cream;
+        border: 2px solid $dark-cyan;
+        border-radius: 50%;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 16px;
+        transform: translateY(-50%);
+        z-index: -1;
+        width: 100%;
+        height: 2px;
+        display: block;
+        background-color: $pale-orange;
+    }
+
+    &:last-child::after {
+        content: none;
+    }
+}
+
+.step__heading {
+    margin-bottom: 42px;
+
+    &__count {
+        display: block;
+        margin-bottom: 38px;
+        font-size: 72px;
+        line-height: 72px;
+        color: $pale-orange;
+    }
+
+    &__title {
+        display: block;
+        max-width: 265px;
+        font-size: 32px;
+        line-height: 36px;
+    }
+}
+
+.step__text {
+    max-width: 300px;
+}
+
+@media only screen and (max-width: 900px) {
+    .steps__heading {
+        margin-bottom: 55px;
+    }
+
+    .steps__list{
+        margin-bottom: 44px;
+    }
+
+    .step__heading {
+        margin-bottom: 38px;
+
+        &__title {
+            max-width: 223px;
+            font-size: 28px;
+            line-height: 32px;
+        }
+    }
+
+    .step {
+        padding-top: 62px;
+    }
+
+    .step__text {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and(max-width:660px) {
+    .steps__heading {
+        margin-bottom: 88px;
+        text-align: center;
+    }
+
+    .steps__list {
+        grid-template-columns: none;
+        margin-bottom: 80px;
+    }
+
+    .step {
+        padding: 0;
+        text-align: center;
+        margin-bottom: 56px;
+
+        &::before {
+            content: none;
+        }
+
+        &::after {
+            content: none;
+        }
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+
+    .step__heading{
+        margin-bottom: 24px;
+        text-align: center;
+
+        &__count{
+            margin-bottom: 24px;
+        }
+
+        &__title{
+            max-width: 100%;
+            margin: 0 auto;
+        }
+    }
+
+    .step__text{
+        max-width: 330px;
+        margin: 0 auto;
+    }
+}
