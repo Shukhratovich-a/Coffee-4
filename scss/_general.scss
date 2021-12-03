@@ -23,7 +23,7 @@ html {
     white-space: nowrap;
 }
 
-body {
+.body {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -34,6 +34,10 @@ body {
     line-height: 26px;
     color: $dark-grey;
     background-color: #fefcf7;
+
+    &--active{
+        overflow: hidden;
+    }
 }
 
 img {
